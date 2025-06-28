@@ -1133,6 +1133,11 @@
       align-items: flex-start;
     }
   }
+  .sm\:justify-evenly {
+    @media (width >= 40rem) {
+      justify-content: space-evenly;
+    }
+  }
   .sm\:gap-4 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 4);
@@ -1142,6 +1147,12 @@
     @media (width >= 40rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 1px;
+    }
+  }
+  .sm\:border-none {
+    @media (width >= 40rem) {
+      --tw-border-style: none;
+      border-style: none;
     }
   }
   .md\:mr-auto {
