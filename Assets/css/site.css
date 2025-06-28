@@ -516,6 +516,9 @@
   .bg-emerald-700 {
     background-color: var(--color-emerald-700);
   }
+  .bg-emerald-800 {
+    background-color: var(--color-emerald-800);
+  }
   .bg-emerald-900 {
     background-color: var(--color-emerald-900);
   }
@@ -739,6 +742,9 @@
   }
   .text-black {
     color: var(--color-black);
+  }
+  .text-emerald-800 {
+    color: var(--color-emerald-800);
   }
   .text-gray-200 {
     color: var(--color-gray-200);
@@ -1186,6 +1192,11 @@
   .lg\:w-1\/4 {
     @media (width >= 64rem) {
       width: calc(1/4 * 100%);
+    }
+  }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
