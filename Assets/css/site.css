@@ -1055,6 +1055,14 @@
       }
     }
   }
+  .hover\:text-base {
+    &:hover {
+      @media (hover: hover) {
+        font-size: var(--text-base);
+        line-height: var(--tw-leading, var(--text-base--line-height));
+      }
+    }
+  }
   .hover\:text-xl {
     &:hover {
       @media (hover: hover) {
