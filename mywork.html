@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Assets/css/site.css"/>
+    <title>Sample Projects</title>
+</head>
+<body class="min-h-screen bg-gradient-to-tr from-emerald-950 to-emerald-50 text-black flex flex-col">
+<header class="p-4 text-center text-black">
+    <section class="py-8">
+        <h2 class="text-center text-2xl font-semibold mb-6">
+            Explore My Site
+        </h2>
+        <nav class="flex flex-col gap-2 sm:flex-row sm:justify-evenly text-center">
+            <a href="about.html"
+               class="block p-4 rounded-full hover:bg-gradient-to-tr from-emerald-950 to-emerald-100 hover:text-xl transition border sm:border-none">
+                <h3 class="text-lg font-bold mb-1">
+                    About Me
+                </h3>
+                <p class="hidden sm:block">
+                    Learn more about my background and skills.
+                </p>
+            </a>
+            <a href="contact.html"
+               class="block p-4 rounded-full hover:bg-gradient-to-tr from-emerald-950 to-emerald-100 hover:text-xl transition border sm:border-none">
+                <h3 class="text-lg font-bold mb-1">
+                    Contact
+                </h3>
+                <p class="hidden sm:block">
+                    Get in touch or send me a message.
+                </p>
+            </a>
+            <a href="resume.html"
+               class="block p-4 rounded-full hover:bg-gradient-to-tr from-emerald-950 to-emerald-100 hover:text-xl transition border sm:border-none">
+                <h3 class="text-lg font-bold mb-1">
+                    Resume
+                </h3>
+                <p class="hidden sm:block">
+                    View my education and work history.
+                </p>
+            </a>
+            <a href="projects.html"
+               class="block p-4 rounded-full hover:bg-gradient-to-tr from-emerald-950 to-emerald-100 hover:text-xl transition border sm:border-none">
+                <h3 class="text-lg font-bold mb-1">
+                    Projects
+                </h3>
+                <p class="hidden sm:block">
+                    See my coding projects and demos.
+                </p>
+            </a>
+            <a href="mywork.html"
+               class="block p-4 rounded-full hover:bg-gradient-to-tr from-emerald-950 to-emerald-100 hover:text-xl transition border sm:border-none">
+                <h3 class="text-lg font-bold mb-1">
+                    Sample Project Page
+                </h3>
+                <p class="hidden sm:block">
+                    Working example of the phase 4 Ninja API form
+                </p>
+            </a>
+        </nav>
+    </section>
+</header>
+<main class=" p-6 space-y-8">
+    <section class="max-w-4xl mx-auto p-6 rounded shadow text-white">
+        <header class="bg-emerald-800  p-4 mb-4">
+            <h2 class="text-2xl font-bold">Ninja API App</h2>
+        </header>
+        <section class="mb-6">
+            <h3 class="text-xl font-semibold mb-2 text-center">Choose from the following APIs</h3>
+            <fieldset class="flex flex-col sm:flex-row sm:justify-evenly gap-2 text-lg">
+                <label class="flex items-center gap-2 ">
+                    <input type="checkbox" id="CommodityCheckbox" class="accent-emerald-800">
+                    Commodity Price
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" id="InflationCheckbox" class="accent-emerald-800">
+                    Inflation Rates
+                </label>
+            </fieldset>
+        </section>
+        <section class="mb-6">
+            <label class="flex gap-2 flex-col items-center gap-2">
+                <input type="text" id="UserInput" placeholder="Choose an API"
+                       class="flex-grow border border-gray-100 p-2 rounded w-full text-white">
+                <button id="FetchBtn"
+                        class="bg-emerald-700 text-white px-4 py-2 rounded hover:bg-emerald-800 transition">
+                    Get Response
+                </button>
+            </label>
+        </section>
+        <section class="border border-white rounded text-center bg-white text-emerald-900 w-auto">
+            <h3 class="text-xl font-semibold mb-2">Response</h3>
+            <section id="ResponseArea" class="flex flex-row flex-wrap items-start pl-2 gap-4 text-center">
+            </section>
+        </section>
+    </section>
+</main>
+<footer class="text-center p-4 border-t mt-8">
+    <p class="text-sm">
+        © 2025 John Robertson and Ngawang Samphel, all rights reserved.
+    </p>
+</footer>
+<script src="Assets/js/sampleWork.js"></script>
+</body>
+</html>
